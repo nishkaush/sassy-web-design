@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style media="screen">
+        body,
+        img,
+        div,
+        nav,
+        ul,
+        li,
+        a {
+            padding: 0;
+            margin: 0;
+            position: relative;
+            text-decoration: none;
+            list-style: none;
+            font-family: palatino;
+        }
+
+        nav {
+            width: 20%;
+            height: 710px;
+            float: left;
+            /*border-right: 10px solid white;*/
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            position: fixed;
+        }
+
+        nav h1 {
+            font-family: cursive;
+            font-size: 3em;
+            color: white;
+            margin: 1em auto;
+            letter-spacing: 2px;
+        }
+
+        nav ul {
+            margin: 1em auto;
+            /*border: 1px solid white;*/
+            height: 390px;
+            line-height: 1em;
+        }
+
+        .menu li {
+            /*color: white;*/
+            color: black;
+            font-size: 1.4em;
+            padding: 0.7em;
+            margin: 0.4em auto;
+            width: 70%;
+            height: 20px;
+            transform: scale(1);
+            transition: transform 0.5s;
+            letter-spacing: 2px;
+            /*border-top: 1px solid #000;*/
+            /*border-left: 1px solid #000;*/
+            border-radius: 30px;
+            box-shadow: 3px 3px 1px 1px black;
+            opacity: 0.9;
+        }
+
+        .menu li:first-child {
+            transform: scale(1.1);
+            background-color: #ff0000;
+            color: white;
+        }
+
+        .menu li:hover {
+            /*border-bottom: 2px solid black;*/
+            transform: scale(1.1);
+            background-color: #ff0000;
+            color: white;
+        }
+
+        .forcolor {
+            /*background: linear-gradient(to right, white, rose);*/
+            /*background-color: purple;*/
+            opacity: 0.9;
+            width: 100%;
+            height: 100%;
+            float: left;
+        }
+
+        nav p {
+            font-size: 0.8em;
+            color: white;
+        }
+
+        .maincontainer {
+            width: 80%;
+            /*height: 700px;*/
+            margin: 0;
+            padding: 0;
+            float: right;
+            display: flex;
+        }
+
+        .first-image-container {
+            flex: 1;
+            display: flex;
+            flex-flow: column;
+            order: 2;
+            transform: scale(1);
+            transition: all 1s;
+        }
+
+        .first-image-container:hover {
+            transform: scale(1.1);
+        }
+
+        .second-image-container {
+            flex: 1;
+            display: flex;
+            flex-flow: column;
+            order: 3;
+            transform: scale(1);
+            transition: all 1s;
+        }
+
+        .second-image-container:hover {
+            transform: scale(1.1);
+        }
+
+        .third-image-container {
+            flex: 1;
+            display: flex;
+            flex-flow: column;
+            order: 1;
+            transform: scale(1);
+            transition: all 1s;
+        }
+
+        .third-image-container:hover {
+            transform: scale(1.1);
+        }
+
+        img {
+            max-width: 100%;
+            height: 100%;
+        }
+    </style>
+    <title>Photos Site</title>
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="forcolor">
+
+            <h1>Anoranza</h1>
+
+            <ul class="menu">
+                <li>Home
+                    <a href="#"></a>
+                </li>
+                <li>Pages
+                    <a href="#"></a>
+                </li>
+                <li>Proofing
+                    <a href="#"></a>
+                </li>
+                <li>Gallery
+                    <a href="#"></a>
+                </li>
+                <li>Portfolio
+                    <a href="#"></a>
+                </li>
+                <li>Blog
+                    <a href="#"></a>
+                </li>
+                <li>Shop
+                    <a href="#"></a>
+                </li>
+            </ul>
+            <p>&copy Copyright 2017</p>
+            <p>All Rights Reserved</p>
+        </div>
+
+    </nav>
+
+    <div class="maincontainer">
+
+        <div class="first-image-container">
+            <img src="http://www.nishant-kaushish.com/wp-content/uploads/2017/03/pin1-abtme.png" alt="abt me">
+            <img src="http://www.nishant-kaushish.com/wp-content/uploads/2017/03/pin2-inspiring.png" alt="inspiring">
+            <img src="http://www.nishant-kaushish.com/wp-content/uploads/2017/03/pin9-js-sex.png" alt="js sexy">
+
+        </div>
+
+        <div class="second-image-container">
+            <img src="http://www.nishant-kaushish.com/wp-content/uploads/2017/03/pin3-horizons.png" alt="horizons">
+            <img src="http://www.nishant-kaushish.com/wp-content/uploads/2017/03/pin4-love-css.png" alt="love css">
+            <img src="http://www.nishant-kaushish.com/wp-content/uploads/2017/03/pin5-sexy.png" alt="web design sexy">
+        </div>
+
+        <div class="third-image-container">
+            <img src="http://www.nishant-kaushish.com/wp-content/uploads/2017/03/pin6-html.png" alt="html">
+            <img src="http://www.nishant-kaushish.com/wp-content/uploads/2017/03/pin7-emmet.png" alt="emmet">
+            <img src="http://www.nishant-kaushish.com/wp-content/uploads/2017/03/pin8-serious.png" alt="wow">
+
+        </div>
+    </div>
+
+</body>
+
+</html>
